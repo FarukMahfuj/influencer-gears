@@ -6,3 +6,19 @@
 font-family: 'Manrope', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
+
+/*----------common styles or utilities---------- */
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*----------nav style---------- */
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo-text{
+font-family: 'Poppins', sans-serif;
+}
