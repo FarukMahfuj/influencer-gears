@@ -72,6 +72,15 @@ nav{
 
 }
 
+.banner-right img{
+    width: 440px;
+    transition: width 2s;
+}
+
+.banner-right img:hover{
+position: relative;
+    width: 500px;
+    }
 
 .banner-left h1{
     font-family: 'Poppins', sans-serif;
