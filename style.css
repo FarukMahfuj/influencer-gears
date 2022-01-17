@@ -8,17 +8,207 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
 /*----------common styles or utilities---------- */
-body{
+*{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
+}
+body{
     font-family: 'Poppins', sans-serif;
 }
 
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.primary-button{
+    border: hidden;
+    outline: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(224, 44, 109, 1);
+    padding: 10px 24px;
+    border-radius: 5px;
+}
+
+.font-space{
+    margin-left: 5px;
+}
+
 /*----------nav style---------- */
-.logo{
+nav{
     display: flex;
     justify-content: center;
+    height: 80px;
+    align-items: center;
 }
-.logo-text{
-font-family: 'Poppins', sans-serif;
+
+/*----------header section---------- */
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: space;
+}
+
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner-right{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+
+}
+
+
+.banner-left h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 52px;
+    color: #3A3A3A;
+    margin-bottom: 16px;
+}
+.banner-left p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3A3A3A;
+    margin-bottom: 36px;
+}
+
+/*----------popular section---------- */
+
+.popular-section h2{
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: #3A3A3A;
+    margin-bottom: 30px;
+    }
+    
+.popular-section a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(224, 44, 109, 0.87);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10%;
+    }
+
+
+    
+    .popular-collection{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        grid-row-gap: 30px;
+        margin-bottom: 50px;
+
+
+    }
+
+.products{
+padding: 15px 15px;
+width: 310px;
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+border-radius: 5px;
+
+}
+
+.product-photo{
+    display: flex;
+padding: 10px;
+    justify-content: center;
+    height: 256px;
+    border-radius: 5px;
+    }
+
+.product-description h3{
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+color: #18191F;
+margin-top: 26px;
+margin-bottom: 16px;
+    }
+.product-description p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+    margin-top: 0%;
+    margin-bottom: 10px;
+    }
+    
+.ratings{
+    font-size: 11px;
+}
+.fa-star,.fa-star-half-alt{
+    color: rgba(251, 130, 0, 1)}
+
+
+.ratings span{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+color: #5E6366;
+margin-left: 5px;
+}
+
+.ratings p{
+font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 143%;
+color: #787885;
+margin-top: 16px;
+}
+
+hr{
+    margin: 100px 8%;
+    }    
+
+    /*----------contact section---------- */
+    .contact-section h2{
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        color: #3A3A3A;
+        margin-bottom: 30px;
+    }
+    .contact-us form{
+        display: flex;
+        flex-direction:column ;
+        align-items: center;
+
+
+    }
+.text-field{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    font-family: inherit;
+    outline: 0px;
+    border: 2px solid rgba(224, 44, 109, 1);
+    border-radius: 5px;
 }
